@@ -500,7 +500,7 @@ function looper() {
                         overlayResponse.includes("железо слева от Вас") ||
                         overlayResponse.includes("золото прямо перед Вами") ||
                         overlayResponse.includes("золото справа от Вас") ||
-                        overlayResponse.includes("золото слева от Вас") || ) {
+                        overlayResponse.includes("золото слева от Вас") ) {
                         stopLoop();
                         timeoutIds.push( setTimeout(startLoop,getRandom(1200, 5000)) );
                     }
