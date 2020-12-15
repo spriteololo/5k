@@ -246,8 +246,9 @@ function looper() {
                         }
                         alsoFlag = false
                     }
-                    if (overlayResponse.includes("сосна в радиусе 5 шагов от Вас") ||
-                        overlayResponse.includes("дуб в радиусе 5 шагов от Вас")) {
+                    if (overlayResponse.includes("медь в радиусе 5 шагов от Вас") ||
+                        overlayResponse.includes("железо в радиусе 5 шагов от Вас") ||
+                        overlayResponse.includes("золото в радиусе 5 шагов от Вас")) {
                         stopLoop();
                         timeoutIds.push( setTimeout(startLoop,getRandom(1200, 5000)) );
                     }
